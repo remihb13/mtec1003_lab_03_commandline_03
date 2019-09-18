@@ -36,7 +36,9 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-
+v314-ent-004:my_files student$ touch foo.txt
+v314-ent-004:my_files student$ ls
+foo.txt
 
 
 ==========
@@ -44,7 +46,8 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+v314-ent-004:my_files student$ touch bar.txt
+v314-ent-004:my_files student$ 
 
 
 ==========
@@ -52,7 +55,7 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
-
+ls
 
 
 ==========
