@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+~
 
 
 ==========
@@ -23,21 +23,32 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
-
+~
+v314-ent-004:~ student$ ~
+-bash: /Users/student: is a directory
 
 ==========
 3. Are there any directories or files in your directory that have the word mtec1003 in it?
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+ls
 
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1003 in them, list them below (otherwise skip this step):
 ----------
-
+v314-ent-004:~ student$ ls
+AMALogger20190109.log	Library			diagram.ai
+AMALogger20190308.log	MPLABXProjects		foo
+AMALogger20190909.log	Movies			food
+Adlm			Music			ipe.properties
+Adobe			Pictures		isus
+Applications		Public			mtec1003
+Creative Cloud Files	QLData			pymel.log
+Desktop			Things			xgen
+Documents		animals
+Downloads		animas
 
 
 ==========
@@ -51,7 +62,12 @@ $ rm -rf mtec1003-labs-02
 
 (skip if these directories don't exist)
 ----------
-
+v314-ent-004:~ student$ $ rm -rf mtec1003
+-bash: $: command not found
+v314-ent-004:~ student$ rm mtec1003
+rm: mtec1003: is a directory
+v314-ent-004:~ student$ $ rm -rf mtec1003-labs-02
+-bash: $: command not found
 
 
 ==========
@@ -67,7 +83,10 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
-
+v314-ent-004:~ student$ curl -o mtec1003-lab-03.tar.gz http://entertainmenttechnology.github.io/Wilson-MTEC1003/labs/03/mtec1003-lab-03.tar.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  898k  100  898k    0     0  1088k      0 --:--:-- --:--:-- --:--:-- 1088k
 
 
 ==========
@@ -75,7 +94,14 @@ Write the command(s) that you used to download this file - as well as its output
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+v314-ent-004:~ student$ unzip mtec1003-lab-03.tar.gz
+Archive:  mtec1003-lab-03.tar.gz
+  End-of-central-directory signature not found.  Either this file is not
+  a zipfile, or it constitutes one disk of a multi-part archive.  In the
+  latter case the central directory and zipfile comment will be found on
+  the last disk(s) of this archive.
+unzip:  cannot find zipfile directory in one of mtec1003-lab-03.tar.gz or
+        mtec1003-lab-03.tar.gz.zip, and cannot find mtec1003-lab-03.tar.gz.ZIP, period.
 
 
 ==========
@@ -90,7 +116,8 @@ Otherwise...
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+v314-ent-004:~ student$ cd mtec1003
+v314-ent-004:mtec1003 student$ 
 
 
 ==========
@@ -98,7 +125,8 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+v314-ent-004:mtec1003 student$ ls mtec1003
+ls: mtec1003: No such file or directory
 
 
 ==========
