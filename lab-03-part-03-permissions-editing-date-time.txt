@@ -6,7 +6,7 @@ Follow the instructions line-by-line.
 * Enter, tab, up and down are represented by <ENTER><TAB>,<UP> and <DOWN>.  
 * "No output" or "nothing happens" are valid answers to any of the questions.
 ==========
-
+No output.
 
 ==========
 We're going to be writing a shell script.  First, though... let's figure out what day and time it is!
@@ -17,7 +17,8 @@ We're going to be writing a shell script.  First, though... let's figure out wha
 
 What command did you use, and what was its output?
 ----------
-
+V217-M07:~ remi.hines-blument$ date
+Thu Sep 19 13:54:53 EDT 2019
 
 
 ==========
@@ -25,7 +26,14 @@ What command did you use, and what was its output?
 
 What command did you use, and what was its output?
 ----------
-
+V217-M07:~ remi.hines-blument$ cal
+   September 2019     
+Su Mo Tu We Th Fr Sa  
+ 1  2  3  4  5  6  7  
+ 8  9 10 11 12 13 14  
+15 16 17 18 19 20 21  
+22 23 24 25 26 27 28  
+29 30 
 
 
 ==========
@@ -33,7 +41,9 @@ What command did you use, and what was its output?
 
 What commands did you use to do this?
 ----------
-
+V217-M07:~ remi.hines-blument$ cd ~
+V217-M07:~ remi.hines-blument$ pwd
+/Users/remi.hines-blument
 
 
 ==========
@@ -41,7 +51,10 @@ What commands did you use to do this?
 
 What commands did you use to do this?
 ----------
-
+V217-M07:~ remi.hines-blument$ ls
+Applications		Downloads		Music			copy_to_backup.sh
+Desktop			Library			Pictures		isus
+Documents		Movies			Public
 
 
 ==========
@@ -49,16 +62,16 @@ What commands did you use to do this?
 
 What command did you use to find the permissions?
 ----------
-
-
+V217-M07:~ remi.hines-blument$ ls -l
+-rw-r--r--   1 remi.hines-blument  ACADEMIC\Domain Users     0 Sep 19 13:56 copy_to_backup.sh
 
 ==========
 6. Change the permissions so that this file is executable by the user.  Verify the new permissions.
 
 What commands did you use to do this?  What was the output?
 ----------
-
-
+V217-M07:~ remi.hines-blument$ chmod u+x copy_to_backup.sh
+V217-M07:~ remi.hines-blument$
 
 ==========
 7. Try executing the file!
@@ -67,15 +80,16 @@ $ ./copy_to_backup.sh
 
 What command did you use to try to execute the file?  What happens?
 ----------
-
-
+V217-M07:~ remi.hines-blument$ ./copy_to_backup.sh
+V217-M07:~ remi.hines-blument$
 
 ==========
 8. Open the file with nano
 
 What command did you use to do this?
 ----------
-
+V217-M07:~ remi.hines-blument$ more nano
+nano: No such file or directory
 
 
 ==========
@@ -89,13 +103,15 @@ Don't forget the first line of your shell script! It should begin with #!/bin/ba
 
 Write out the code in your file below...
 ----------
-
+V217-M07:~ remi.hines-blument$ cp Users/remi.hines-blument backup
+cp: Users/remi.hines-blument: No such file or directory 
+(confused)
 
 
 ==========
 10. Create a directory in your home called test
 ----------
-
+V217-M07:~ remi.hines-blument$ mkdir test
 
 
 ==========
@@ -103,7 +119,8 @@ Write out the code in your file below...
 
 What commands did you use to do this?
 ----------
-
+V217-M07:test remi.hines-blument$ touch 1.txt 2.txt
+V217-M07:test remi.hines-blument$ 
 
 
 ==========
