@@ -125,8 +125,9 @@ v314-ent-004:mtec1003 student$
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-v314-ent-004:mtec1003 student$ ls mtec1003
-ls: mtec1003: No such file or directory
+V217-M07:~ remi.hines-blument$ ls Downloads
+mtec1003-lab-03		mtec1003-lab-03.tar.gz
+
 
 
 ==========
@@ -134,7 +135,9 @@ ls: mtec1003: No such file or directory
 
 Write the command(s) (including going home) that you used to do this below:
 ----------
-
+V217-M07:~ remi.hines-blument$ cd Downloads/mtec1003-lab-03/books/science-fiction
+V217-M07:science-fiction remi.hines-blument$ pwd
+/Users/remi.hines-blument/Downloads/mtec1003-lab-03/books/science-fiction
 
 
 ==========
@@ -142,7 +145,8 @@ Write the command(s) (including going home) that you used to do this below:
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
+V217-M07:science-fiction remi.hines-blument$ ls
+pg84.txt	pg86.txt
 
 
 ==========
@@ -150,21 +154,27 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to do this below:
 ----------
-
+V217-M07:~ remi.hines-blument$ cd Downloads/mtec1003-lab-03/books/science-fiction
+V217-M07:science-fiction remi.hines-blument$
 ==========
 13. Immediately change back to the mtec1003-lab-03 folder with a single command using a *relative* path.
 
 Write the command(s) that you used to do this below:
 ----------
-
+V217-M07:science-fiction remi.hines-blument$ cd remi.hines-blument/Downloads/mtec1003-lab-03
+-bash: cd: remi.hines-blument/Downloads/mtec1003-lab-03: No such file or directory
 ==========
 14. Find out what the most recently modified directory is in mtec1003 (there are only 3 to choose from)?  How would you find this out?  Hint: perhaps using something to show the modified date... and sort it by time.
 
 Write the command(s) that you used to do this below:
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ ls -t
+books	logs	web
+V217-M07:mtec1003-lab-03 remi.hines-blument$ 
 ==========
 15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz)
 
 Write the command(s) that you used to do this below:
 ----------
+V217-M07:mtec1003-lab-03 remi.hines-blument$ gzip logs.txt
+gzip: can't stat: logs.txt (logs.txt): No such file or directory
