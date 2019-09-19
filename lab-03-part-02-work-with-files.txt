@@ -36,8 +36,8 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
-v314-ent-004:my_files student$ touch foo.txt
-v314-ent-004:my_files student$ ls
+V217-M07:my_files remi.hines-blument$ touch foo.txt
+V217-M07:my_files remi.hines-blument$ ls
 foo.txt
 
 
@@ -46,8 +46,9 @@ foo.txt
 
 $ touch bar.txt
 ----------
-v314-ent-004:my_files student$ touch bar.txt
-v314-ent-004:my_files student$ 
+V217-M07:my_files remi.hines-blument$ touch bar.txt
+V217-M07:my_files remi.hines-blument$ ls
+bar.txt	foo.txt
 
 
 ==========
@@ -55,7 +56,10 @@ v314-ent-004:my_files student$
 
 Copy and paste the output below.
 ----------
-ls
+V217-M07:my_files remi.hines-blument$ ls -l
+total 0
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 bar.txt
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 foo.txt
 
 
 ==========
@@ -64,20 +68,37 @@ ls
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
-
+V217-M07:my_files remi.hines-blument$ cp bar.txt baz.txt
+V217-M07:my_files remi.hines-blument$ ls -l
+total 0
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 bar.txt
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:36 baz.txt
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 foo.txt
 
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
-----------
+---------
+V217-M07:my_files remi.hines-blument$ rm bar.txt
+V217-M07:my_files remi.hines-blument$ ls -l
+total 0
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:36 baz.txt
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 foo.txt
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+V217-M07:my_files remi.hines-blument$ mv foo.txt qux.txt
+V217-M07:my_files remi.hines-blument$ ls -l
+total 0
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:36 baz.txt
+-rw-r--r--  1 remi.hines-blument  ACADEMIC\Domain Users  0 Sep 19 13:28 qux.txt
+V217-M07:my_files remi.hines-blument$ 
+
 
 
 
@@ -93,7 +114,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ rmdir my_files
+rmdir: my_files: Directory not empty
 
 
 ==========
@@ -101,7 +123,8 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ rm my_files
+rm: my_files: is a directory
 
 
 ==========
@@ -111,7 +134,8 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ rm -rf my_files
+V217-M07:mtec1003-lab-03 remi.hines-blument$ 
 
 
 ==========
@@ -123,7 +147,7 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+It brought up everything that was in the pg1232 text file.
 
 
 ==========
@@ -135,8 +159,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
-
-
+head books/other/pg1232.txt
+Title: The Prince
 
 ==========
 18. Using the same file again!
@@ -147,7 +171,17 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below.
 ----------
+V217-M07:mtec1003-lab-03 remi.hines-blument$ tail books/other/pg1232.txt
 
+
+Most people start at our Web site which has the main PG search facility:
+
+     http://www.gutenberg.org
+
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
@@ -159,7 +193,9 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
-
+less books/other/pg1232.txt
+pressing q seemed to delete what showed after inputing the command.
+pressing spacebar seem to show other commands that are involved with pg1232.txt
 
 
 ==========
@@ -167,22 +203,29 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less is to show the contents of the file with pagination.
+more is the same as less.
+cat shows all the contents of a file.
+head shows the contents at the start of the file.
+tail shows the contents at the end of the file.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ wc books/other/pg1232.txt
+    5063   52639  305864 books/other/pg1232.txt
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
-
+V217-M07:mtec1003-lab-03 remi.hines-blument$ wc -l books/other/pg1232.txt
+    5063 books/other/pg1232.txt
 
 ==========
 23.  Make sure you're in the books/other folder.  Copy all of the txt files from that folder to your home directory using wildcard matching.
 
 Write the command that you used below.
 ----------
+V217-M07:other remi.hines-blument$ cp *.txt archive
